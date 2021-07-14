@@ -18,7 +18,6 @@ exports.getToken = function(user) {
 };
 
 var opts = {};
-
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = config.secretKey;
 
